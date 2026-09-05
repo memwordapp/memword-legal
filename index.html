@@ -28,7 +28,7 @@
 
 <h2>1. 我們不會蒐集的資料</h2>
 <p>本 App <strong>不需要註冊或登入</strong>。使用者身分僅以裝置上自動產生的匿名識別碼表示，該識別碼不與任何真實姓名、電子郵件、電話等個人身分資訊綁定。</p>
-<p>除下方「App 內回報問題功能」所述之外，本 App 的 Google Play 版本<strong>完全離線運作，不連接任何伺服器</strong>。您的單字庫、學習進度、測驗紀錄與個人設定，全部僅儲存在您裝置本機的儲存空間中，我們<strong>不會</strong>上傳、蒐集或存取這些資料。</p>
+<p>除下方「App 內回報問題功能」與「自動錯誤回報」所述之外，本 App 的 Google Play 版本<strong>完全離線運作，不連接任何伺服器</strong>。您的單字庫、學習進度、測驗紀錄與個人設定，全部僅儲存在您裝置本機的儲存空間中，我們<strong>不會</strong>上傳、蒐集或存取這些資料。</p>
 
 <h2>2. App 內「回報問題」功能所蒐集的資料</h2>
 <p>本 App 的測驗頁面提供「🐛 回報問題」功能，供您主動回報題目或內容錯誤。<strong>僅在您主動點擊送出回報時</strong>，以下資料才會被傳送至我們的伺服器（Firebase）：</p>
@@ -42,7 +42,16 @@
 </ul>
 <p>這些資料僅用於<strong>協助我們排查與修正題庫或功能問題</strong>，我們只會新增回報，不會讀取或修改其他使用者已送出的回報。若您不使用此功能，則不會有任何資料傳送出裝置。</p>
 
-<h2>3. 第三方服務</h2>
+<h2>3. 自動錯誤回報（Firebase Crashlytics）</h2>
+<p>本 App 使用 Google Firebase Crashlytics 自動偵測應用程式發生無法預期的當機（crash）。當本 App 發生當機時，<strong>不需要您手動操作</strong>，下列資訊會自動傳送至 Google：</p>
+<ul>
+  <li>當機當下的程式錯誤堆疊資訊（crash stack trace）</li>
+  <li>裝置型號、作業系統版本、App 版本等技術資訊</li>
+  <li>一組由 Crashlytics 自動產生、僅用於識別裝置安裝實例的匿名識別碼（與您裝置單字庫使用的識別碼、回報問題功能使用的識別碼皆各自獨立，不會互相對應）</li>
+</ul>
+<p>本 App <strong>刻意未啟用</strong> Firebase Analytics，這些崩潰報告不會與任何使用者行為分析或廣告識別碼建立關聯。這些資料僅用於<strong>協助我們定位並修正程式錯誤</strong>，其蒐集與保留適用 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google Firebase 隱私權政策</a>。</p>
+
+<h2>4. 第三方服務</h2>
 <p>本 App 使用以下第三方服務，這些服務可能依其各自的隱私權政策蒐集資料：</p>
 
 <h3>Google AdMob（廣告）</h3>
@@ -51,17 +60,18 @@
 <h3>Google Play 帳單服務（Play Billing）</h3>
 <p>本 App 內「移除廣告」等一次性購買項目，交易全程由 Google Play 帳單服務處理。本 App <strong>不會</strong>取得、儲存您的信用卡號或付款資訊，僅會收到 Google Play 回傳的購買成功結果。</p>
 
-<h2>4. 資料保留與刪除</h2>
+<h2>5. 資料保留與刪除</h2>
 <p>由於單字庫、學習進度等資料僅存於您的裝置本機，<strong>解除安裝本 App 即會一併刪除裝置上儲存的所有本機資料</strong>。</p>
 <p>透過「回報問題」功能送出的回報資料，會保留在我們的伺服器上供排查與修正問題之用。若您希望我們刪除您曾送出的回報資料，歡迎透過下方聯絡方式與我們聯繫。</p>
+<p>Crashlytics 崩潰報告由 Google 依其自身的保留政策管理，詳見 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google Firebase 隱私權政策</a>。</p>
 
-<h2>5. 兒童隱私權</h2>
+<h2>6. 兒童隱私權</h2>
 <p>本 App 主要面向國中以上學生及一般使用者，並非專為兒童設計，也不會刻意向 13 歲以下兒童蒐集個人資料。</p>
 
-<h2>6. 政策異動</h2>
+<h2>7. 政策異動</h2>
 <p>若本政策內容有變更，我們會更新本頁面上方的「生效日期」。建議您不定期查閱本頁面以了解最新內容。</p>
 
-<h2>7. 聯絡我們</h2>
+<h2>8. 聯絡我們</h2>
 <p>若您對本隱私權政策有任何疑問，歡迎透過以下方式聯絡我們：<br>
 <a href="mailto:memwordapp@gmail.com">memwordapp@gmail.com</a></p>
 
